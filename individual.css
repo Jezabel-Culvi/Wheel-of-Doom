@@ -66,10 +66,10 @@ input{
 
 .btn_casillero {
     position: absolute;
-    width: 96%;
-    height: 71%;
-    top: 25%;
-    right: 3%;
+    width: 62%;
+    height: 68%;
+    top: 24.5%;
+    left: 36%;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(5, 1fr);
@@ -77,9 +77,9 @@ input{
 }
 
 .casilla{
-    width: 112%;
-    height: 120%;
-    display: none;
+
+    display: block;
+
 
 }
 
