@@ -9,17 +9,16 @@ body {
 background-image: url("https://i.pinimg.com/564x/fa/2b/7f/fa2b7f23dcd6eddea008b6a5a01cbfe0.jpg");
 background-repeat: no-repeat;
 background-size: cover;
+object-fit: fill;
 }
 .logo {
- width :100px;
- height:50px;
+ width: 100px;
+ height: 100px;
 }
-
 header {
 width: 100%;
 height: 15vh;
 }
-
 .logos-header {
 display: flex;
 justify-content: space-between;
@@ -30,7 +29,7 @@ height: 15vh;
 }
 .logo {
 width: 3000px;
-height: 150px;
+height: 400px;
 }
 
 
@@ -45,11 +44,12 @@ height: 80vh;
 grid-area: 1 / 1 / 3 / 2;
 width:100%;
 display: flex;
+margin-top: 60px;
 }
 
 .casillero{
     display: flex;
-    padding-left: 20%;
+    padding-left: 30%;
     padding-bottom: 5%;
     position: relative;
 
@@ -63,7 +63,6 @@ input{
     appearance: none;
     border: 2px solid #888;
 }
-
 
 .btn_casillero {
     position: absolute;
@@ -81,7 +80,7 @@ input{
     width: 112%;
     height: 120%;
     display: none;
-  
+
 }
 
 #Start{
@@ -95,6 +94,7 @@ width: 100%;
 height: 40vh;
 display: flex;
 justify-content: center;
+
 }
 
 #ganadora {
@@ -103,7 +103,6 @@ width: 100%;
 height: 40vh;
 display: flex;
 justify-content: center;
-box-shadow: 10px 0px 70px 0px  #b9d64e;
 }
 .links {
 display: flex;
@@ -117,12 +116,13 @@ height: 5vh;
 .links a {
 text-decoration:none;
 font-family: 'Changa One', cursive;
-font-size: 2em;
-color: orange;
+font-size: 3em;
+color: #cf0060;
 }
 .rueda {
 width: 700px;
-
+height: 300px;
+margin-top: 60px;
 }
 .resultado {
 width: 700px;
