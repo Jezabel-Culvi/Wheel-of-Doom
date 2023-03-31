@@ -9,18 +9,16 @@ box-sizing: border-box;
 position: relative;
 
 }
-img {
 
-}
 
 a {display: flex;
 text-decoration: none;
 position: absolute;
-top: 15%;
-left: 11%;
+top: 85%;
+left: 40%;
 text-align: center;
 font-family: 'Changa One', cursive;
-font-size: 2em;
+font-size: 4em;
 color: orange;
 }
     
