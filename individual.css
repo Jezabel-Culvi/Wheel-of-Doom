@@ -77,7 +77,7 @@ input{
 }
 
 .casilla{
-
+    display: none;
     display: block;
 
 
