@@ -16,4 +16,12 @@ items[index].setAttribute('selected', true);
       list.options[0].innerText = nuevoitem;
       document.frm.txtNombre.value = "";
     }
+  
   }
+
+
+
+
+
+  //añadir codigo modo nocturno
+  
