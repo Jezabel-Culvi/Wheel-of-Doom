@@ -17,26 +17,47 @@
     </header>
     <main>
       <div id="card">
-          <img class="boleto" src="./fotos/boleto4.png" alt="boleto sorteo con todos los nombres">
+          <img alt="boleto sorteo con todos los nombres" class="boleto" src="./fotos/boleto4.png">
       </div>
       <section class="opciones">
-          <input type="text" class="text">
-          <input type="text" class="text">
-          <button class="text">Agregar<br> nombre</button>
-          <button class="text" id="select">START</button>
+          <form class="inputs" name="frm" method="post">
+              <table >
+
+                  <tr>
+                      <td colspan="2">
+                         <select class="list" name="selNombre" id="selNombre">
+                          </select>
+                      </td>
+                  </tr>
+
+                  <tr>
+                      <td></td>
+                      <td><input class="name" type="text" name="txtNombre" placeholder="Añada un participante"></td>
+                  </tr>
+                  <tr>
+                      <td></td>
+                      <td><input class="insert" type="button" value="Agregar Nombre" onclick="agregar()"></td>
+                  </tr>
+
+              </table>
+          </form>
       </section>
 
       <section id="bombo">
           <img class="transformed" src="fotos/bombo.png">
       </section>
       <section id="ganadora">
-        <img class="resultado" src="fotos/resultado.png" alt="">
+        <img class="resultado" src="fotos/resultado.png" alt="cuadro azul neon con estrellas laterales">
+          <div id="resultado">
+             <h1>fgsfgdg</h1>
+              <input class="reset" type="reset" value="Reset" placeholder="Reset">
+          </div>
       </section>
 
     </main>
     <footer class="links">
         <a href="portada.html">Inicio</a>
     </footer>
-
+<script src="main.js"></script>
 </body>
 </html>
