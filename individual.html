@@ -15,9 +15,13 @@
 
         </div>
     </header>
+    
     <main>
       <div id="card">
-          <img alt="boleto sorteo con todos los nombres" class="boleto" src="./fotos/boleto4.png">
+       <div class="boleto">
+         <img class="foto_boleto" src="./fotos/boleto4.png" alt="boleto decorati con todos los nombres">
+         <input type="button" value="Aleatorio" onclick="aleatorio()">
+       </div>
       </div>
       <section class="opciones">
           <form class="inputs" name="frm" method="post">
@@ -44,8 +48,9 @@
       </section>
 
       <section id="bombo">
-          <img class="transformed" src="fotos/bombo.png">
+       <img class="transformed" src="fotos/bombo.png">
       </section>
+
       <section id="ganadora">
         <img class="resultado" src="fotos/resultado.png" alt="cuadro azul neon con estrellas laterales">
           <div id="resultado">
@@ -55,8 +60,9 @@
       </section>
 
     </main>
+
     <footer class="links">
-        <a href="portada.html">Inicio</a>
+     <a href="portada.html">Inicio</a>
     </footer>
 <script src="main.js"></script>
 </body>
