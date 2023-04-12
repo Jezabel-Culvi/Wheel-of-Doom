@@ -23,19 +23,40 @@
          <input type="button" value="Aleatorio" onclick="aleatorio()">
        </div>
       </div>
+      <section class="opciones">
+          <form class="inputs" name="frm" method="post">
+              <table >
 
-     <section class="opciones">
-        <input type="text" class="text">
-        <input type="text" class="text">
-        <button class="text">Agregar<br> nombre</button>
-     </section>
+                  <tr>
+                      <td colspan="2">
+                         <select class="list" name="selNombre" id="selNombre">
+                          </select>
+                      </td>
+                  </tr>
+
+                  <tr>
+                      <td></td>
+                      <td><input class="name" type="text" name="txtNombre" placeholder="Añada un participante"></td>
+                  </tr>
+                  <tr>
+                      <td></td>
+                      <td><input class="insert" type="button" value="Agregar Nombre" onclick="agregar()"></td>
+                  </tr>
+
+              </table>
+          </form>
+      </section>
 
       <section id="bombo">
        <img class="transformed" src="fotos/bombo.png">
       </section>
 
       <section id="ganadora">
-       <img class="resultado" src="fotos/resultado.png" alt="nombre del resultado">
+        <img class="resultado" src="fotos/resultado.png" alt="cuadro azul neon con estrellas laterales">
+          <div id="resultado">
+             <h1>fgsfgdg</h1>
+              <input class="reset" type="reset" value="Reset" placeholder="Reset">
+          </div>
       </section>
 
     </main>
@@ -43,6 +64,6 @@
     <footer class="links">
      <a href="portada.html">Inicio</a>
     </footer>
-
+<script src="main.js"></script>
 </body>
 </html>
