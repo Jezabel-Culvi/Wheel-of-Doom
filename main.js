@@ -4,7 +4,7 @@ document.getElementById("boton-nombre").addEventListener("click", () => {
     let name = document.getElementById("casilla-nombre").value;
     listaDeNombres.push(name);
     // limpiar el input
-
+  
 // pintar la lista de nombres que tenemos hasta ahora dentro del div que tiene el id "lista-de-nombres"
 for (let i = 0; i < listaDeNombres.length; i++) {
 
