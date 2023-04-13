@@ -1,27 +1,39 @@
 let listaDeNombres = [];
 let nameListDiv = document.getElementById("participantes")
 document.getElementById("boton-nombre").addEventListener("click", () => {
-    let name = document.getElementById("casilla-nombre").value;
-    listaDeNombres.push(name);
-    // limpiar el input
-  
-// pintar la lista de nombres que tenemos hasta ahora dentro del div que tiene el id "lista-de-nombres"
-for (let i = 0; i < listaDeNombres.length; i++) {
-
- let lastElement = listaDeNombres.pop(listaDeNombres.length -1);
- let nameElement = document.createElement("p");
- let nameText = document.createTextNode(lastElement);
-
- nameElement.appendChild(nameText);
- nameListDiv.appendChild(nameElement);
-}
+  let name = document.getElementById("casilla-nombre").value;
+  listaDeNombres.push(name);
+  // limpiar el input
+  document.getElementById("casilla-nombre").value = ""
+  // pintar la lista de nombres que tenemos hasta ahora dentro del div que tiene el id "lista-de-nombres"
+  actualizarListaDeNombres();
 });
 
-function aleatorio() {
-let select = document.getElementById("list");
-let items = select.getElementByTagName("option");
-let index = Math.floor(Math.random()*items.length);
-items[index].setAttribute('selected', true);
+// funcion que selecciona una participante aleatoria y la pinta en el cuadro del resultado.
+function actualizarListaDeNombres() {
+  nameListDiv.innerHTML = listaDeNombres.join("<br/>");
 }
-  //añadir codigo modo nocturno
+
+function aleatorio() {
+  let numero = Math.floor(Math.random()*listaDeNombres.length);
+  let nombre = listaDeNombres[numero];
+  document.getElementById("result").innerHTML = nombre;
+  listaDeNombres.splice(numero,1);
+  actualizarListaDeNombres();
+}
+
+function reset() {
+  // vaciar la lista que tiene los nombres
+  let vaciar = listaDeNombres.pop();
+  document.getElementById("result").innerHTML = nombre;
+  while (listaDeNombres.length > 0)
+  vaciar
+  while (nombre.length > 0)
+  nombre
   
+  
+  // actualizar lo que se ve en pantalla para que se borre usando la funcion actualizarlistaDeNombres
+  actualizarListaDeNombres();
+}
+
+  //añadir codigo modo nocturno

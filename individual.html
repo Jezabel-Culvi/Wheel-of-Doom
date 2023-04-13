@@ -18,13 +18,13 @@
       <div id="card">
        <div class="boleto">
          <img class="foto_boleto" src="./fotos/boleto4.png" alt="boleto decorati con todos los nombres">
-         <input type="button" value="" onclick="aleatorio()">
+         <input type="button" onclick= "aleatorio()">
        </div>
       </div>
       <section class="opciones">
           <input id="casilla-nombre" class="name" type="text" placeholder="Añadir participante">
           <div  id="boton-nombre">Añadir</div>
-          <div id="participantes"></div>
+          <div id="participantes" class="voluntary"></div>
       </section>
 
       <section id="bombo">
@@ -34,8 +34,8 @@
       <section id="ganadora">
         <img class="resultado" src="fotos/resultado.png" alt="cuadro azul neon con estrellas laterales">
           <div id="resultado">
-             <output class="result-output" id="result">agfg</output>
-              <input class="reset" type="reset" value="Reset" placeholder="Reset">
+             <output class="result-output" id="result"></output>
+              <input class="reset" type="reset" value="Reset" placeholder="Reset" onclick="reset()">
           </div>
       </section>
 
