@@ -1,3 +1,25 @@
+let listaDeNombres = [];
+
+document.getElementById("boton-nombre").addEventListener("click", () => {
+    let name = document.getElementById("casilla-nombre").value;
+    listaDeNombres.push(name);
+    // limpiar el input
+
+// pintar la lista de nombres que tenemos hasta ahora dentro del div que tiene el id "lista-de-nombres"
+
+let participantes = listaDeNombres.map(function(bar){
+   for (let i = 0; i < listaDeNombres.lenght; i++) {
+   listaDeNombres += '<li>'+bar[i]+'</li>';
+ }
+ });
+  document.getElementById("participantes").innerHTML = participantes;
+})
+/*let participantes = listaDeNombres.map(function(bar){
+   return '<p>'+bar+'</p>'
+ });
+  document.getElementById("participantes").innerHTML = participantes;
+})
+
 function aleatorio() {
 let select = document.getElementById("list");
 let items = select.getElementByTagName("option");

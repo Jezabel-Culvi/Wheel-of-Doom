@@ -10,9 +10,7 @@
 
     <header>
         <div class="logos-header">
-
-          <img class="logo" src="fotos/logo.png">
-
+            <img class="logo" src="fotos/logo.png">
         </div>
     </header>
     
@@ -20,31 +18,13 @@
       <div id="card">
        <div class="boleto">
          <img class="foto_boleto" src="./fotos/boleto4.png" alt="boleto decorati con todos los nombres">
-         <input type="button" value="Aleatorio" onclick="aleatorio()">
+         <input type="button" value="" onclick="aleatorio()">
        </div>
       </div>
       <section class="opciones">
-          <form class="inputs" name="frm" method="post">
-              <table >
-
-                  <tr>
-                      <td colspan="2">
-                         <select class="list" name="selNombre" id="selNombre">
-                          </select>
-                      </td>
-                  </tr>
-
-                  <tr>
-                      <td></td>
-                      <td><input class="name" type="text" name="txtNombre" placeholder="Añada un participante"></td>
-                  </tr>
-                  <tr>
-                      <td></td>
-                      <td><input class="insert" type="button" value="Agregar Nombre" onclick="agregar()"></td>
-                  </tr>
-
-              </table>
-          </form>
+          <input id="casilla-nombre" class="name" type="text" placeholder="Añadir participante">
+          <div  id="boton-nombre">Añadir</div>
+          <div id="participantes"></div>
       </section>
 
       <section id="bombo">
@@ -54,7 +34,7 @@
       <section id="ganadora">
         <img class="resultado" src="fotos/resultado.png" alt="cuadro azul neon con estrellas laterales">
           <div id="resultado">
-             <h1>fgsfgdg</h1>
+             <output class="result-output" id="result">agfg</output>
               <input class="reset" type="reset" value="Reset" placeholder="Reset">
           </div>
       </section>
@@ -62,7 +42,7 @@
     </main>
 
     <footer class="links">
-     <a href="portada.html">Inicio</a>
+     <a href="portada.html">Página principal</a>
     </footer>
 <script src="main.js"></script>
 </body>
