@@ -59,10 +59,10 @@ height: 70vh;
 
 .boleto input {
   position: absolute;
-  bottom: 11%;
+  bottom: 28%;
   margin-left: 73%;
   width: 25%;
-  height: 7%;
+  height: 12%;
   background-color: transparent;
   border: none;
 }
