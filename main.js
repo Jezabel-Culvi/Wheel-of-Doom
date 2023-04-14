@@ -24,14 +24,9 @@ function aleatorio() {
 
 function reset() {
   // vaciar la lista que tiene los nombres
-  let vaciar = listaDeNombres.pop();
-  document.getElementById("result").innerHTML = nombre;
+  document.getElementById("result").value = "";
   while (listaDeNombres.length > 0)
-  vaciar
-  while (nombre.length > 0)
-  nombre
-  
-  
+  listaDeNombres.pop()
   // actualizar lo que se ve en pantalla para que se borre usando la funcion actualizarlistaDeNombres
   actualizarListaDeNombres();
 }
