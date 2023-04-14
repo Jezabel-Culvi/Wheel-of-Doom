@@ -25,11 +25,14 @@ text-decoration: none;
 
 
 font-family: 'Changa One', cursive;
-font-size: 5em;
-color: #cf0060;
+font-size: 4em;
+color:  #40f2fe;
+text-shadow: 0 0 5px #cf0060, 0 0 10px #40f2fe, 0 0 15px #40f2fe;
+-webkit-text-fill-color: #F4ECFF;
+-webkit-text-stroke-color: #C546F7;
+-webkit-text-stroke-width: 0.2px;
 }
     
-
 .small-txt{
     margin-top: 5%;
     margin-left: 10%;
@@ -46,6 +49,7 @@ color: #cf0060;
     width: 30%;
     height: 10%;
 }
+
 input[type="checkbox"] {
     position: relative;
     width: 40px;

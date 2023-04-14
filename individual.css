@@ -12,15 +12,13 @@ body {
   background-size: 100vw 100vh;
   background-blend-mode: overlay;
   object-fit: fill;
+  background-blend-mode: normal;
 }
 
 body.dark-mode {
-
   background-color: #252525;
   color: #f2f2f2;
 }
-
-
 
 /* seccion header */
 .logo {
@@ -39,14 +37,12 @@ header {
   align-items: center;
   padding: 3% 10%;
   height: 15vh;
-
 }
 
 .logo {
   width: 3000px;
   height: 400px;
 }
-
 
 /* seccion main */
 main {
@@ -55,28 +51,45 @@ main {
   height: 80vh;
 }
 
+/* seccion boleto*/
+.foto_boleto {
+width: 170%;
+height: 70vh;
+}
+
+.boleto {
+  width: 51%;
+  height: 68%;
+  margin-left: 5%;
+  position: relative;
+}
+
+.boleto input {
+  position: absolute;
+  bottom: 28%;
+  margin-left: 73%;
+  width: 25%;
+  height: 12%;
+  background-color: transparent;
+  border: none;
+}
+
 /* seccion lista participantes */
 .opciones {
   grid-area: 1 / 2 / 2 / 3;
-  margin-left: 20%;
-  margin-top: 15%;
+  margin-left: 10%;
+  margin-top: 17%;
   width: 100%;
-  height: 100%;
+  height: 60vh;
   border: 2px solid #40f2fe;
   border-radius: 15% 3% 15% 3%;
   box-shadow: 0 0 70px 0 #40f2fe, inset 0 0 20px 0 #40f2fe;
+  padding-left: 30%;
 }
 
-.inputs {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-left: 20%;
-}
-
-.insert {
+#boton-nombre {
   margin-top: 5%;
+  padding-left: 18%;
   background-color: transparent;
   color: #cf0060;
   font-size: 2em;
@@ -94,24 +107,29 @@ main {
 .name {
   background-color: transparent;
   color: #40f2fe;
-  font-size: 1.5em;
+  font-size: 1em;
   outline: none;
   border: none;
-
   border-bottom: 2px solid #cf0060;
-  color: #cf0060;
-  height: 50px;
-  width: 80%;
-
-}
-
-.list {
-  height: 90%;
+  height: 10%;
+  width: 70%;
+  text-align: center;
 }
 
 ::placeholder {
   color: #ff00de;
   text-align: center;
+}
+
+#participantes {
+ margin-top: 5%;
+ font-size: 1.5em;
+ letter-spacing: -2px;
+ color: #40f2fe;
+ text-shadow: 0 0 5px #cf0060, 0 0 10px #40f2fe, 0 0 15px #40f2fe;
+  -webkit-text-fill-color: #F4ECFF;
+  -webkit-text-stroke-color: #C546F7;
+  -webkit-text-stroke-width: 0.2px;
 }
 
 /* sección imagen boleto*/
@@ -120,21 +138,6 @@ main {
   width: 100%;
   display: flex;
   margin-top: 15%;
-}
-
-.boleto {
-  width: 51%;
-  height: 68%;
-  margin-left: 5%;
-  position: relative;
-}
-
-.boleto input {
-  position: absolute;
-  bottom: 0em;
-  right: -14%;
-  width: 31%;
-  height: 18%;
 }
 
 #bombo {
@@ -146,9 +149,9 @@ main {
 }
 
 .transformed {
-  width: 700px;
-  height: 300px;
-  margin-top: 60px;
+  width: 60%;
+  height: 70%;
+  margin-top: 15%;
   animation: rotation 2s infinite linear;
 }
 
@@ -162,14 +165,6 @@ main {
   }
 }
 
-#ganadora {
-  grid-area: 2 / 3 / 3 / 3;
-  width: 100%;
-  height: 40vh;
-  display: flex;
-  justify-content: center;
-}
-
 /* footer */
 
 .links {
@@ -179,15 +174,18 @@ main {
   gap: 10%;
   width: 100%;
   height: 5vh;
-
 }
 
 .links a {
   text-decoration: none;
   font-family: 'Changa One', cursive;
   font-size: 3em;
-  color: #cf0060;
-  margin-bottom: 1%;
+  color:  #40f2fe;
+  text-shadow: 0 0 5px #cf0060, 0 0 10px #40f2fe, 0 0 15px #40f2fe;
+  -webkit-text-fill-color: #F4ECFF;
+  -webkit-text-stroke-color: #C546F7;
+  -webkit-text-stroke-width: 0.2px;
+  margin-bottom: 4%;
 }
 
 /* sección ganadora */
@@ -200,15 +198,17 @@ main {
 }
 
 .resultado {
-  width: 700px;
+  width: 90%;
+  height: 100%;
   position: relative;
+  top: -60%
 }
 
 #resultado {
   position: absolute;
   width: 15%;
-  height: 15%;
-  margin-top: 7%;
+  height: 16%;
+  margin-top: -6%;
   letter-spacing: -2px;
   color: #40f2fe;
   text-shadow: 0 0 5px #cf0060, 0 0 10px #40f2fe, 0 0 15px #40f2fe;
@@ -217,7 +217,6 @@ main {
   -webkit-text-stroke-width: 0.2px;
   display: flex;
   justify-content: center;
-  align-items: center;
   font-size: 2em;
 }
 
@@ -229,7 +228,6 @@ main {
   font-size: 0.75em;
   color: black;
   cursor: pointer;
-
 }
 
 .small-txt {

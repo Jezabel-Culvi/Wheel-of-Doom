@@ -1,71 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Night Club</title>
     <link href="individual.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 </head>
+
 <body>
 
     <header>
         <div class="logos-header">
             <p class="small-txt">Activar modo nocturno</p>
-            <input id="chekitem" type="checkbox" onclick="enableDarkMode()">   
-         
-          <img class="logo" src="fotos/logo.png">
-
+            <input id="chekitem" type="checkbox" onclick="enableDarkMode()">
+            <img class="logo" src="fotos/logo.png">
         </div>
     </header>
-    
+
     <main>
-      <div id="card">
-       <div class="boleto">
-         <img class="foto_boleto" src="./fotos/boleto4.png" alt="boleto decorati con todos los nombres">
-         <input type="button" value="Aleatorio" onclick="aleatorio()">
-       </div>
-      </div>
-      <section class="opciones">
-          <form class="inputs" name="frm" method="post">
-              <table >
+        <div id="card">
+            <div class="boleto">
+                <img class="foto_boleto" src="./fotos/boleto4.png" alt="boleto decorati con todos los nombres">
+                <input type="button" onclick="aleatorio()">
+            </div>
+        </div>
+        <section class="opciones">
+            <input id="casilla-nombre" class="name" type="text" placeholder="Añadir participante">
+            <div id="boton-nombre">Añadir</div>
+            <div id="participantes" class="voluntary"></div>
+        </section>
 
-                  <tr>
-                      <td colspan="2">
-                         <select class="list" name="selNombre" id="selNombre">
-                          </select>
-                      </td>
-                  </tr>
+        <section id="bombo">
+            <img class="transformed" src="fotos/bombo.png">
+        </section>
 
-                  <tr>
-                      <td></td>
-                      <td><input class="name" type="text" name="txtNombre" placeholder="Añada un participante"></td>
-                  </tr>
-                  <tr>
-                      <td></td>
-                      <td><input class="insert" type="button" value="Agregar Nombre" onclick="agregar()"></td>
-                  </tr>
-
-              </table>
-          </form>
-      </section>
-
-      <section id="bombo">
-       <img class="transformed" src="fotos/bombo.png">
-      </section>
-
-      <section id="ganadora">
-        <img class="resultado" src="fotos/resultado.png" alt="cuadro azul neon con estrellas laterales">
-          <div id="resultado">
-             <h1>fgsfgdg</h1>
-              <input class="reset" type="reset" value="Reset" placeholder="Reset">
-          </div>
-      </section>
+        <section id="ganadora">
+            <img class="resultado" src="fotos/resultado.png" alt="cuadro azul neon con estrellas laterales">
+            <div id="resultado">
+                <output class="result-output" id="result"></output>
+                <button class="reset" onclick="reset()">Reset</button>
+            </div>
+        </section>
 
     </main>
 
     <footer class="links">
-     <a href="portada.html">Inicio</a>
+        <a href="portada.html">INICIO</a>
     </footer>
-<script src="main.js"></script>
+    <script src="main.js"></script>
 </body>
+
 </html>
