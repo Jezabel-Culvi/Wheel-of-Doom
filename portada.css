@@ -29,7 +29,8 @@ font-size: 5em;
 color: #cf0060;
 }
     
-button{
+
+.small-txt{
     margin-top: 5%;
     margin-left: 10%;
     letter-spacing: -2px;
@@ -45,3 +46,42 @@ button{
     width: 30%;
     height: 10%;
 }
+input[type="checkbox"] {
+    position: relative;
+    width: 40px;
+    height: 20px;
+    background-color: #434343;
+    appearance: none;
+    outline: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s ease;
+    margin-left: 20%;
+    }
+    
+    input[type="checkbox"]:checked{
+        background-color: #04ac2e;
+    
+    }
+    
+    input[type="checkbox"]::before{
+     content:  "";
+     position: absolute;
+     width: 16px;
+     height: 16px;
+     background-color: #f2f2f2;
+     border-radius: 50%;
+     top: 2px;
+     left: 2px;
+     transition: 0.7s ease;
+    }
+    
+    input[type="checkbox"]:checked::before{
+        transform: translateX(20px);
+    }
+    
+    .dark-mode {
+    
+        background-color: #252525;
+        color: #f2f2f2;
+    }
